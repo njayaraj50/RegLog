@@ -67,28 +67,7 @@ public class UserDetailsDao {
 			}catch(Exception e){System.out.println(e);}  
 		    return id;  
 		}
-		public static boolean Checkuser1(UserDetails u) {
-			boolean status=false;
-			int id=0;
-			try{  
-		        Connection con=getConnection();  
-		        PreparedStatement ps=con.prepareStatement("select username,password from logintable where username=? and password=?"); 
-		        ps.setString(1,u.getUsername());  
-		        ps.setString(2, u.getPassword()); 
-		        ResultSet rs=ps.executeQuery();
-		        status=rs.next();
-		        /*if(status) {
-		        	PreparedStatement ps1=con.prepareStatement("SELECT id FROM logintable WHERE username=? and password=?");
-		        	ps1.setString(1,u.getUsername());  
-			        ps1.setString(2, u.getPassword());
-			        ResultSet rs1=ps1.executeQuery();
-			        while(rs1.next()) {
-			        	id=rs1.getInt(1);
-			        }
-		        }*/
-			}catch(Exception e){System.out.println(e);}  
-		    return status;  
-		}
+		
 		public static UserDetails getUserById(int id){  
 			UserDetails   u=null;
 		    try{  
