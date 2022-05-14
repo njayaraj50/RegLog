@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+h1{
+	text-align: center;
+	color:navy;
+}
+#submit{
+	float:right;
+}
+.form-label{
+	font-size: larger;
+	color:black;
+	font-weight:bold;
+}
