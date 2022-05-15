@@ -1,6 +1,22 @@
 @charset "ISO-8859-1";
+body {font-family: Arial, Helvetica, sans-serif;}
 
+body {
 
+	background-color: #dedede;
+	}
+	h1{
+	background-color: #555;
+	text-align: center;
+	color:white;
+	}
+input[type=text]{
+	border:none;
+	 
+}
+#lname,#email,#pswd{
+	background-color: #dedede;
+}
 .icon-bar {
   width: 100%;
   background-color: #555;

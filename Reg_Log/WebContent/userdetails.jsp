@@ -31,7 +31,7 @@ UserDetails u1=UserDetailsDao.getUserById(Integer.parseInt(id));
  <a href="loginform.jsp"><i class="glyphicon glyphicon-log-out"></i></a>
 </div>
   
-      <h1 style="text-align:center;">Personal Details</h1> 
+      <h1 id="personal" style="text-align:center;">Personal Details</h1> 
       <div class="container mt-3">
       <form class="form-horizontal" action="dashboard.jsp" method="get">
 <div class="table-responsive">
@@ -44,7 +44,7 @@ UserDetails u1=UserDetailsDao.getUserById(Integer.parseInt(id));
   </tr>
   <tr>
      <td>Last Name:</td>
-     <td><input type="text" name="lastname" value="<%= u1.getLastname()%>"></td>
+     <td><input type="text" id="lname" name="lastname" value="<%= u1.getLastname()%>"></td>
   </tr>
   <tr>
      <td>Mobile:</td>
@@ -52,7 +52,7 @@ UserDetails u1=UserDetailsDao.getUserById(Integer.parseInt(id));
   </tr>
   <tr>
      <td>Email:</td>
-     <td><input type="text" name="email" value="<%=u1.getEmail()%>" ></td>
+     <td><input type="text" id="email" name="email" value="<%=u1.getEmail()%>" ></td>
   </tr>
   <tr>
      <td>UserName:</td>
@@ -60,7 +60,7 @@ UserDetails u1=UserDetailsDao.getUserById(Integer.parseInt(id));
   </tr>
   <tr>
      <td>Password:</td>
-     <td><input type="text" name="password" value="<%=u1.getPassword()%>"></td>
+     <td><input type="text" id="pswd" name="password" value="<%=u1.getPassword()%>"></td>
   </tr>
   <tr>
      <td colspan="2"><input type="submit" value="OK"></td>
