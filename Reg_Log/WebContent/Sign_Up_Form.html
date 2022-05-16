@@ -12,6 +12,14 @@
    <div id="signup" class="container mt-3">
         <h1>SIGN-UP</h1>
         <form action="AddUser.jsp" method="post"> 
+           <div class="mb-3 mt-3">
+               <label for="usertype" class="form-label">UserType:</label>
+    <select class="form-control"  name="usertypeid" id="usertypeid"  required>
+      <option>Choose your usertype</option>
+      <option value="1">Customer</option>
+      <option value="2">Seller</option>
+    </select>             
+           </div>
            <div class="mb-3 mt-3"> 
             <label for="firstname" class="form-label">First Name:</label>
               <input type="text" id="firstname" class="form-control" name="firstname" placeholder="Enter Your First Name" required><br>

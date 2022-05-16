@@ -29,6 +29,10 @@ h1{
 	text-align: center;
 	color:white;
 }
+h2{
+	margin-top:-650px;
+	margin-left:200px;
+}
 .icon-bar {
   width: 100px;
   background-color: #555;

@@ -11,14 +11,21 @@
 </head>
 <body>
    <%
-   int status=UserDetailsDao.Checkuser(u);
-  
-   if(status>0){
-	   session.setAttribute("status",status);
+   int[] status=UserDetailsDao.Checkuser(u);
+      int id=status[0];
+      int typeid=status[1];
+   if(typeid==1){
+	   session.setAttribute("status",id);
 	   response.sendRedirect("dashboard.jsp"); 
 	      
-   }else{  
-   response.sendRedirect("AddUser_Error.jsp"); 
+   }
+   else  if(typeid==2){ 
+	   session.setAttribute("status",id);
+	   response.sendRedirect("sellerdashboard.jsp"); 
+   
+   }
+   else{
+	   response.sendRedirect("AddUser_Error.jsp");  
    }
    %>    
 </body>

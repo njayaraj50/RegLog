@@ -2,13 +2,25 @@ package dao;
 
 public class UserDetails {
  
-	private int id;
-	private String firstname,lastname,mobile,email,username,password;
+	private int id,usertypeid;
+	private String usertype,firstname,lastname,mobile,email,username,password;
 	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
 		this.id = id;
+	}
+	public int getUsertypeid() {
+		return usertypeid;
+	}
+	public void setUsertypeid(int usertypeid) {
+		this.usertypeid = usertypeid;
+	}
+	public String getUsertype() {
+		return usertype;
+	}
+	public void setUsertype(String usertype) {
+		this.usertype = usertype;
 	}
 	public String getFirstname() {
 		return firstname;
@@ -46,6 +58,7 @@ public class UserDetails {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
 	
 	
 }
