@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Product</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="userdetails.css">
+</head>
+<body>
+        
+  <div class="icon-bar">
+  <a  href="sellerdashboard.jsp"><i class="fa fa-home"></i></a> 
+  <a href="sellerdetails.jsp"><i class="fa fa-fw fa-user"></i></a>
+  <a class="active" href="#"><i class="fa fa-cart-plus"></i></a> 
+  <a href="viewsellerproducts.jsp"><i class="fa fa-list-alt"></i></a> 
+  <a href="#"><i class="fa fa-globe"></i></a>
+  <a href="#"><i class="fa fa-trash"></i></a> 
+  <a href="loginform.jsp"><i class="glyphicon glyphicon-log-out"></i></a>
+</div>
+<div id="dashboard3" class="mt-12 mb-6">
+           <h2 style="text-align: center;">Add New Product</h2>   
+      </div>  
+<div id="addproduct" class="container mt-6">
+     <form action="AddProduct.jsp" method="post">
+          <div class="mb-3 mt-6"> 
+            <label for="productname" class="form-label">Product Name:</label>
+              <input type="text" id="productname" class="form-control" name="productname" placeholder="Enter Your Product Name" required><br>
+           </div>
+           <div class="mb-3"> 
+            <label for="description" class="form-label">Description:</label> 
+              <input type="text" id="description" name="description" class="form-control" placeholder="Add a description" required><br>
+           </div>
+           <div class="mb-3 mt-3">
+             <button type="submit" id="add" name="add" class="btn btn-info" style='font-size:20px'>Add<i class='fa fa-cart-plus'></i></button>
+           </div>
+     </form>
+</div>
+</body>
+</html>
